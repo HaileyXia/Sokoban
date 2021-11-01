@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" style="-fx-background-color: lightcyan;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.InfoController">
+   <children>
+      <HBox layoutX="72.0" layoutY="48.0" prefHeight="38.0" prefWidth="330.0" />
+      <Label layoutX="158.0" layoutY="10.0" prefHeight="38.0" prefWidth="244.0" text="How To Play SOKOBAN">
+         <font>
+            <Font name="Verdana Italic" size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="30.0" layoutY="51.0" prefHeight="398.0" prefWidth="540.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="step1" prefHeight="38.0" prefWidth="494.0" />
+            <Label fx:id="step2" prefHeight="21.0" prefWidth="515.0" GridPane.rowIndex="1" />
+            <Label fx:id="step3" prefHeight="21.0" prefWidth="510.0" GridPane.rowIndex="2" />
+            <Label fx:id="step4" prefHeight="17.0" prefWidth="516.0" GridPane.rowIndex="3" />
+            <Label fx:id="step5" prefHeight="17.0" prefWidth="504.0" GridPane.rowIndex="4" />
+            <Label fx:id="step6" prefHeight="17.0" prefWidth="535.0" GridPane.rowIndex="5" />
+            <Label fx:id="step7" prefHeight="17.0" prefWidth="512.0" GridPane.rowIndex="6" />
+            <Label fx:id="step8" prefHeight="17.0" prefWidth="537.0" GridPane.rowIndex="7" />
+            <Label fx:id="step9" prefHeight="17.0" prefWidth="534.0" GridPane.rowIndex="8" />
+            <Label fx:id="step10" prefHeight="17.0" prefWidth="511.0" GridPane.rowIndex="9" />
+            <Label fx:id="step11" prefHeight="17.0" prefWidth="519.0" GridPane.rowIndex="10" />
+            <Label fx:id="step12" prefHeight="17.0" prefWidth="512.0" GridPane.rowIndex="11" />
+            <Label fx:id="step13" prefHeight="17.0" prefWidth="521.0" GridPane.rowIndex="12" />
+            <Label fx:id="step14" prefHeight="29.0" prefWidth="509.0" GridPane.rowIndex="13" />
+            <Label fx:id="step15" prefHeight="29.0" prefWidth="509.0" GridPane.rowIndex="14" />
+            <Label fx:id="step16" prefHeight="29.0" prefWidth="509.0" GridPane.rowIndex="15" />
+         </children>
+      </GridPane>
+      <HBox layoutX="30.0" layoutY="532.0" prefHeight="38.0" prefWidth="565.0">
+         <children>
+            <ImageView fx:id="img1" fitHeight="54.0" fitWidth="47.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img2" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img3" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img4" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img5" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img6" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img7" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img8" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img9" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="img10" fitHeight="51.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

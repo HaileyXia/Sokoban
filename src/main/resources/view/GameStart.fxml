@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.StartController">
+    <children>
+        <MenuBar fx:id="menu" prefHeight="29.0" prefWidth="167.0" GridPane.rowIndex="0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem accelerator="Shortcut+S" mnemonicParsing="false" onAction="#saveGame" text="Save game" />
+                        <MenuItem accelerator="Shortcut+L" mnemonicParsing="false" onAction="#loadGame" text="Load game" />
+                        <SeparatorMenuItem />
+                        <MenuItem mnemonicParsing="false" onAction="#closeGame" text="Exit" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Level">
+                    <items>
+                        <MenuItem accelerator="Shortcut+Z" mnemonicParsing="false" onAction="#undo" text="Undo" />
+                        <RadioMenuItem accelerator="Shortcut+M" mnemonicParsing="false" onAction="#toggleMusic" text="Toggle music" />
+                        <RadioMenuItem accelerator="Shortcut+D" mnemonicParsing="false" onAction="#toggleDebug" text="Toggle debug" />
+                        <SeparatorMenuItem />
+                        <MenuItem accelerator="Shortcut+R" mnemonicParsing="false" onAction="#resetLevel" text="Reset Level" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <items>
+                        <MenuItem accelerator="Shortcut+A" mnemonicParsing="false" onAction="#showAbout" text="About this game" />
+                        <MenuItem accelerator="Shortcut+L" mnemonicParsing="false" onAction="#showRankList" text="Ranking List" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+
+        <GridPane fx:id="gameGrid" alignment="BOTTOM_CENTER" GridPane.rowIndex="1">
+
+        </GridPane>
+        <Label prefHeight="32.0" prefWidth="97.0" text="Username:" GridPane.columnIndex="1" />
+        <Label fx:id="nameLabelOut" prefHeight="31.0" prefWidth="74.0" GridPane.columnIndex="2" />
+        <Label prefHeight="30.0" prefWidth="44.0" text="Level:" GridPane.columnIndex="3" />
+        <Label fx:id="levelLabelOut" prefHeight="30.0" prefWidth="44.0" GridPane.columnIndex="4" />
+        <Label prefHeight="31.0" prefWidth="46.0" text="Moves:" GridPane.columnIndex="5" />
+        <Label fx:id="countLabelOut" prefHeight="29.0" prefWidth="80.0" GridPane.columnIndex="6" />
+      <ImageView fx:id="key" fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="7" />
+      <ImageView fx:id="key2" fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="8" />
+      <ImageView fx:id="key3" fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="9" />
+      <ImageView fx:id="key4" fitHeight="31.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="10" />
+
+    </children>
+    <columnConstraints>
+        <ColumnConstraints maxWidth="255.0" minWidth="100.0" prefWidth="161.0" />
+        <ColumnConstraints maxWidth="246.0" minWidth="0.0" prefWidth="68.0" />
+        <ColumnConstraints maxWidth="177.0" minWidth="10.0" prefWidth="65.0" />
+        <ColumnConstraints maxWidth="276.0" minWidth="0.0" prefWidth="35.0" />
+        <ColumnConstraints maxWidth="323.0" minWidth="10.0" prefWidth="29.0" />
+        <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="44.0" />
+        <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="55.0" />
+        <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="37.0" />
+        <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="37.0" />
+      <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="36.0" />
+      <ColumnConstraints maxWidth="272.0" minWidth="10.0" prefWidth="36.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints />
+        <RowConstraints />
+      <RowConstraints />
+    </rowConstraints>
+</GridPane>

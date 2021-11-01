@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: lightblue" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.RankAfterLevelController">
+   <children>
+      <HBox layoutX="66.0" layoutY="30.0" prefHeight="340.0" prefWidth="469.0">
+         <children>
+            <GridPane prefHeight="327.0" prefWidth="476.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="80.0" minHeight="10.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="156.0" minHeight="4.0" prefHeight="33.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="280.0" minHeight="10.0" prefHeight="274.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+                     <content>
+                        <TableView fx:id="table" prefHeight="571.0" prefWidth="469.0">
+                          <columns>
+                            <TableColumn fx:id="index" prefWidth="107.0" text="No." />
+                            <TableColumn fx:id="name" prefWidth="112.0" text="Name" />
+                              <TableColumn fx:id="moves" prefWidth="130.0" text="Moves" />
+                              <TableColumn fx:id="time" prefWidth="119.0" text="Time(s)" />
+                          </columns>
+                        </TableView>
+                     </content>
+                  </ScrollPane>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="33.0" prefWidth="99.0" text="RANKING LIST" textAlignment="CENTER" GridPane.rowIndex="1" />
+                  <GridPane>
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="75.32318115234375" minWidth="10.0" prefWidth="71.62399291992188" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="65.8192138671875" minWidth="10.0" prefWidth="65.8192138671875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="72.30081176757812" minWidth="10.0" prefWidth="63.5184326171875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="79.30078125" minWidth="10.0" prefWidth="68.7440185546875" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="84.30081176757812" minWidth="10.0" prefWidth="60.2559814453125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Label fx:id="levelNameOut" prefHeight="33.0" prefWidth="116.0" />
+                        <Label prefHeight="34.0" prefWidth="60.0" text="Username:" GridPane.columnIndex="1" />
+                        <Label prefHeight="36.0" prefWidth="43.0" text="Moves:" GridPane.columnIndex="3" />
+                        <Label fx:id="movesOut" prefHeight="33.0" prefWidth="65.0" GridPane.columnIndex="4" />
+                        <Label fx:id="usernameOut" prefHeight="33.0" prefWidth="65.0" GridPane.columnIndex="2" />
+                        <Label fx:id="timeOut" prefHeight="33.0" prefWidth="65.0" GridPane.columnIndex="6" />
+                        <Label prefHeight="33.0" prefWidth="65.0" text="Time:" GridPane.columnIndex="5" />
+                     </children>
+                  </GridPane>
+               </children>
+            </GridPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

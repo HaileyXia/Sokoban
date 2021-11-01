@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: lightblue" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.ae2dms.controller.RankController">
+   <columnConstraints>
+      <ColumnConstraints maxWidth="193.0" minWidth="102.0" prefWidth="133.0" />
+      <ColumnConstraints maxWidth="183.0" minWidth="10.0" prefWidth="129.0" />
+      <ColumnConstraints maxWidth="190.0" minWidth="10.0" prefWidth="132.0" />
+      <ColumnConstraints maxWidth="192.0" minWidth="10.0" prefWidth="133.0" />
+      <ColumnConstraints maxWidth="221.0" minWidth="10.0" prefWidth="135.0" />
+      <ColumnConstraints maxWidth="259.0" minWidth="10.0" prefWidth="138.0" />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="35.0" />
+      <RowConstraints maxHeight="135.0" minHeight="10.0" prefHeight="40.0" />
+      <RowConstraints maxHeight="523.0" minHeight="265.0" prefHeight="426.0" />
+   </rowConstraints>
+   <children>
+      <ScrollPane prefHeight="372.0" prefWidth="114.0" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table1" prefHeight="604.0" prefWidth="235.0">
+              <columns>
+                  <TableColumn fx:id="table1index" minWidth="9.0" prefWidth="49.0" text="No." />
+                <TableColumn fx:id="table1Name" prefWidth="57.0" text="Name" />
+                <TableColumn fx:id="table1Moves" prefWidth="59.0" text="Moves" />
+                  <TableColumn fx:id="table1Time" minWidth="0.0" prefWidth="70.0" text="Time(s)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table2" prefHeight="607.0" prefWidth="205.0">
+              <columns>
+                  <TableColumn fx:id="table2index" prefWidth="43.0" text="No." />
+                <TableColumn fx:id="table2Name" prefWidth="51.0" text="Name" />
+                <TableColumn fx:id="table2Moves" prefWidth="62.0" text="Moves" />
+                  <TableColumn fx:id="table2Time" prefWidth="64.0" text="Time(s)" />
+              </columns>
+            </TableView>
+         </content></ScrollPane>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table4" prefHeight="605.0" prefWidth="207.0">
+              <columns>
+                  <TableColumn fx:id="table4index" minWidth="0.0" prefWidth="40.0" text="No." />
+                <TableColumn fx:id="table4Name" minWidth="0.0" prefWidth="64.0" text="Name" />
+                <TableColumn fx:id="table4Moves" prefWidth="50.0" text="Moves" />
+                  <TableColumn fx:id="table4Time" prefWidth="69.0" text="Time(s)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table3" prefHeight="605.0" prefWidth="201.0">
+              <columns>
+                  <TableColumn fx:id="table3index" prefWidth="41.0" text="No." />
+                <TableColumn fx:id="table3Name" prefWidth="57.0" text="Name" />
+                <TableColumn fx:id="table3Moves" prefWidth="47.0" text="Moves" />
+                  <TableColumn fx:id="table3Time" prefWidth="72.0" text="Time(s)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <ScrollPane prefHeight="200.0" prefWidth="174.0" GridPane.columnIndex="4" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table5" prefHeight="605.0" prefWidth="203.0">
+              <columns>
+                  <TableColumn fx:id="table5index" prefWidth="42.0" text="No." />
+                <TableColumn fx:id="table5Name" prefWidth="62.0" text="Name" />
+                <TableColumn fx:id="table5Moves" prefWidth="49.0" text="Moves" />
+                  <TableColumn fx:id="table5Time" prefWidth="59.0" text="Time(s)" />
+              </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+      <Label prefHeight="29.0" prefWidth="99.0" text="RANK" GridPane.columnIndex="2">
+         <font>
+            <Font name="Verdana Italic" size="18.0" />
+         </font>
+      </Label>
+      <Label prefHeight="34.0" prefWidth="98.0" text="LEVEL 1" textAlignment="CENTER" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="34.0" prefWidth="89.0" text="LEVEL 2" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="37.0" prefWidth="101.0" text="LEVEL 3" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="37.0" prefWidth="101.0" text="LEVEL 4" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="34.0" prefWidth="88.0" text="LEVEL 5" GridPane.columnIndex="4" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="34.0" prefWidth="88.0" text="LEVEL 6" GridPane.columnIndex="5" GridPane.rowIndex="1">
+         <font>
+            <Font name="Verdana Italic" size="14.0" />
+         </font>
+      </Label>
+      <Label prefHeight="29.0" prefWidth="99.0" text="LIST" GridPane.columnIndex="3">
+         <font>
+            <Font name="Verdana Italic" size="18.0" />
+         </font>
+      </Label>
+      <ScrollPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="5" GridPane.rowIndex="2">
+         <content>
+            <TableView fx:id="table6" prefHeight="605.0" prefWidth="220.0">
+               <columns>
+                  <TableColumn fx:id="table6index" prefWidth="40.0" text="No." />
+                  <TableColumn fx:id="table6Name" prefWidth="63.43988037109375" text="Name" />
+                  <TableColumn fx:id="table6Moves" prefWidth="57.539794921875" text="Moves" />
+                  <TableColumn fx:id="table6Time" prefWidth="56.99993896484375" text="Time(s)" />
+               </columns>
+            </TableView>
+         </content>
+      </ScrollPane>
+   </children>
+</GridPane>
